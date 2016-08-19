@@ -9,7 +9,9 @@ SOURCES += main.cpp \
     Symbols/Pin/PinOut.cpp \
     Symbols/Gates/And/And.cpp \
     Symbols/FlipFlops/FlipFlop.cpp \
-    Symbols/FlipFlops/D_FF/D_FF.cpp
+    Symbols/FlipFlops/D_FF/D_FF.cpp \
+    Symbols/Generals/Ground/Ground.cpp \
+    Symbols/Generals/Vcc/Vcc.cpp
 
 RESOURCES += qml.qrc
 
@@ -29,7 +31,9 @@ HEADERS += \
     Symbols/Pin/PinOut.h \
     Symbols/Gates/And/And.h \
     Symbols/FlipFlops/FlipFlop.h \
-    Symbols/FlipFlops/D_FF/D_FF.h
+    Symbols/FlipFlops/D_FF/D_FF.h \
+    Symbols/Generals/Ground/Ground.h \
+    Symbols/Generals/Vcc/Vcc.h
 
 INCLUDEPATH += \
     Utils \
