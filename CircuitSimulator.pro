@@ -4,14 +4,14 @@ QT += qml quick
 CONFIG += c++11
 
 SOURCES += main.cpp \
-    Symbols/Gates/Gate.cpp \
-    Symbols/Pin/PinIn.cpp \
-    Symbols/Pin/PinOut.cpp \
-    Symbols/Gates/And/And.cpp \
-    Symbols/FlipFlops/FlipFlop.cpp \
-    Symbols/FlipFlops/D_FF/D_FF.cpp \
-    Symbols/Generals/Ground/Ground.cpp \
-    Symbols/Generals/Vcc/Vcc.cpp
+    Project/Symbols/Gates/Gate.cpp \
+    Project/Symbols/Pin/PinIn.cpp \
+    Project/Symbols/Pin/PinOut.cpp \
+    Project/Symbols/Gates/And/And.cpp \
+    Project/Symbols/FlipFlops/FlipFlop.cpp \
+    Project/Symbols/FlipFlops/D_FF/D_FF.cpp \
+    Project/Symbols/Generals/Ground/Ground.cpp \
+    Project/Symbols/Generals/Vcc/Vcc.cpp
 
 RESOURCES += qml.qrc
 
@@ -22,19 +22,20 @@ QML_IMPORT_PATH =
 include(deployment.pri)
 
 HEADERS += \
-    Symbols/Symbol.h \
-    Utils/Array.h \
-    Utils/FixedQueue.h \
-    Utils/Types.h \
-    Symbols/Gates/Gate.h \
-    Symbols/Pin/PinIn.h \
-    Symbols/Pin/PinOut.h \
-    Symbols/Gates/And/And.h \
-    Symbols/FlipFlops/FlipFlop.h \
-    Symbols/FlipFlops/D_FF/D_FF.h \
-    Symbols/Generals/Ground/Ground.h \
-    Symbols/Generals/Vcc/Vcc.h
+    Project/Symbols/Symbol.h \
+    Project/Utils/Array.h \
+    Project/Utils/FixedQueue.h \
+    Project/Utils/Types.h \
+    Project/Symbols/Gates/Gate.h \
+    Project/Symbols/Pin/PinIn.h \
+    Project/Symbols/Pin/PinOut.h \
+    Project/Symbols/Gates/And/And.h \
+    Project/Symbols/FlipFlops/FlipFlop.h \
+    Project/Symbols/FlipFlops/D_FF/D_FF.h \
+    Project/Symbols/Generals/Ground/Ground.h \
+    Project/Symbols/Generals/Vcc/Vcc.h
 
 INCLUDEPATH += \
-    Utils \
-    Symbols
+    Project \
+    Project/Utils \
+    Project/Symbols
